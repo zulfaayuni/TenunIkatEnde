@@ -1,0 +1,287 @@
+/* Global Styles */
+/*body, html {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  font-family: 'Arial', sans-serif;*/
+/*  height: 100%;*/
+/*  position: relative;*/
+/*}*/
+html,body{
+  overflow-x: hidden;  
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Animasi transisi */
+}
+  
+.navbar-scrolled{
+    background-color: #FAB12F;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+ }
+  
+/* 
+.navbar a {
+  color: #000000;
+}
+
+.navbar a:hover {
+  color: #FADFA1;
+} */
+
+
+.nav-link {
+    color: #FFFFFF; /* Warna default untuk navbar */
+    transition: all 0.3s ease;
+}
+  
+ .nav-link.active {
+    color: #FFFFFF!important; /* Paksa warna putih ketika aktif */
+    border-bottom: 2px solid white;
+}
+
+ .nav-link:hover {
+    color: #FAB12F;
+ }    
+    
+.nav-pills .nav-link {
+  transition: color 0.3s;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #FF9D3D;
+}
+
+.btn-warning {
+  background-color: #FAB12F;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #FAB12F;
+  color: #FFFFFF;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Parallax Background */
+.parallax {
+  background-image: url('assets01/gallery.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* About Section Background */
+.bg-about {
+  background-color: #F5F7F8; /* Light background color for about section */
+}
+ 
+.btn-warning:focus{
+    outline: none;
+}
+#about1 {
+  background-image: url("assets/ftotnun");
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+/* Responsive Image Styling */
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/*nav tab */
+  
+ 
+    .nav-pills .nav-link {
+        background-color: #FFFFFF;
+        border-radius: 50px; /* Membuat bentuk bulat */
+        padding: 10px 20px;
+        transition: background-color 0.3s, color 0.3s; /* Menambahkan transisi halus */
+        margin-left: 5px;
+        border: 1px solid #FAB12F;
+    }
+
+    .nav-pills .nav-link:hover {
+        background-color: #FAB12F; /* Warna oranye saat di hover */
+        color: white; /* Teks berubah menjadi putih saat di hover */
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #FAB12F; /* Warna oranye saat aktif */
+        color: white; /* Teks putih saat aktif */
+    }
+
+
+
+
+/* Image and Text Margin for Larger Screens */
+#about .col-md-6 img {
+  margin-right: 20px; /* Margin between image and text for larger screens */
+}
+
+ .btn-warning{
+     outline: none;
+ }
+
+/* Card Styling */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1); /* Zoom effect on image hover */
+}
+
+
+.section {
+  padding: 50px 0; /* Padding for sections */
+}
+
+/* Testimonial Section */
+
+.testimonial-card {
+  background-color: #F5F7F8;
+  border: 1px solid #dee2e6;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  background-color: #FAB12F; 
+  color: #FFFFFF;
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+ 
+.testimonial-card:hover .testimonial-name,
+.testimonial-card:hover .testimonial-location,
+.testimonial-card:hover .testimonial-text,
+.testimonial-card:hover .fa-star{
+  color: #ffffff !important; /* Teks dan ikon bintang juga menjadi putih */
+}
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #6c757d;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card img:hover {
+     
+  transform: scale(1.1);
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #495057;
+  margin-top: 1rem;
+}
+
+
+
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin-top: 0.75rem;
+}
+
+
+.testimonial-location {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Transition Effects */
+.transition {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.transition:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-thumbnail {
+  border: none;
+}
+
+.faq-container {
+  background: #FFFFFF; /* Background color for FAQ section */
+}
+
+.contact {
+  background: #F5F7F8; /* Background color for contact section */
+}
+
+/* Contact Form Styling */
+#contact .form-control {
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#contact button {
+  background-color: #FCCD2A;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact button:hover {
+  background-color: #FCCD2A;
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+
+
+/* Animations */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.text-animation {
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 767px) {
+  #about .col-md-6 img {
+    margin-right: 0; /* Remove right margin for small screens */
+    margin-bottom: 20px; /* Add bottom margin for vertical layout */
+  }
+
+  #about .col-md-6 {
+    margin-top: 20px; /* Add margin between text columns under image */
+  }
+}
